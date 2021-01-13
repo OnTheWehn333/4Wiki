@@ -1,0 +1,32 @@
+= [[ToDo]] =
+
+= Knowledge =
+== Programming ==
+=== Languages: ===
+* Python:
+* [[Ruby]]:
+* Javascript:
+* [[Java]]:
+* C#:
+* [[Markdown]]:
+
+=== Frameworks: ===
+* Rails:
+* [[Nodejs]]:
+* React:
+
+=== Programs ===
+* [[VSCode]]: 
+* [[NeoVim]]
+ 
+== OS ==
+* [[Linux]]:
+* Windows:
+* Mac:  
+  
+  
+== Projects ==
+=== RustDiamonds ===
+* Games_Server
+* [[Bot_Network]]
+* Web_Server

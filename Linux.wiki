@@ -1,0 +1,20 @@
+= Linux =
+
+=== Terminal Commands ===
+*NOTE*: *{}* is a parameter
+
+* Rename file:
+  * mv *{Options}* source destination
+  * Ex. mv originalName newName
+* Check if service is running:
+  * service *{service}* status
+* Start service:
+  * sudo systemctl start *{service}*
+
+
+=== Bash ===
+
+* Print date
+{{{bash
+echo $(date) 
+}}}

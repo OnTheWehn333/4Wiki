@@ -1,0 +1,65 @@
+= Ruby: = 
+
+=== Language ===
+===== Try Catch/Begin Rescue =====
+* Block of code to deal with an Exception if one pops up.
+
+{{{
+  begin
+    -Code here that might throw an exception
+  rescue => e
+    -can try to fix issue and possibly run again, or put string and continue on
+  else
+    -If there is no error this will run
+  ensure
+    -will always run
+  end
+}}}
+
+=== Libraries ===
+
+This has a list of libraries that are commonly used with ruby. I'll put example code for usage and a quick description.
+
+===== RestClient: =====
+* Description: 
+  * Does REST actions using ruby, very easy to use.
+* Example: 
+ 
+{{{
+require 'rest-client'
+
+RestClient.get 'http://example.com/resource'
+
+RestClient.get 'http://example.com/resource', {params: {id: 50, 'foo' => 'bar'}}
+
+RestClient.get 'https://user:password@example.com/private/resource', {accept: :json}
+
+RestClient.post 'http://example.com/resource', {param1: 'one', nested: {param2: 'two'}}
+
+RestClient.post "http://example.com/resource", {'x' => 1}.to_json, {content_type: :json, accept: :json}
+
+RestClient.delete 'http://example.com/resource'
+
+>> response = RestClient.get 'http://example.com/resource'
+=> <RestClient::Response 200 "<!doctype h...">
+>> response.code
+=> 200
+>> response.cookies
+=> {"Foo"=>"BAR", "QUUX"=>"QUUUUX"}
+>> response.headers
+=> {:content_type=>"text/html; charset=utf-8", :cache_control=>"private" ... }
+>> response.body
+=> "<!doctype html>\n<html>\n<head>\n    <title>Example Domain</title>\n\n ..."
+
+RestClient.post( url,
+  {
+    :transfer => {
+      :path => '/foo/bar',
+      :owner => 'that_guy',
+      :group => 'those_guys'
+    },
+     :upload => {
+      :file => File.new(path, 'rb')
+    }
+  })
+}}}

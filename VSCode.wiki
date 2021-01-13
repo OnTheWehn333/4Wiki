@@ -1,0 +1,31 @@
+= VSCode =
+
+== Keybinds ==
+vim escape shortcut:
+{{{
+"vim.insertModeKeyBindings": [
+  {
+    "before": ["j", "j"],
+    "after": ["<Esc>"]
+  }
+]
+}}}
+
+* Keep file open in editor: <Ctrl> K + <Enter>
+* Demonstrates keybinds for navigating windows effectively
+  * https://blog.logrocket.com/learn-these-keyboard-shortcuts-to-become-a-vs-code-ninja/
+== Problems ==
+1. Neovim extension won't let me move around with hjkl. Couldn't find fix now using regular Vim plugin.
+2. 
+
+== Extensions ==
+
+==== General ====
+* Vim: General Editor keybinds
+* Git Graph: Visual for Git
+* Pretteier: Automatic code formatter
+
+==== Ruby ====
+* Solargraph: language server for ruby
+* Ruby: Ruby language support
+* Rufo: Code formatter

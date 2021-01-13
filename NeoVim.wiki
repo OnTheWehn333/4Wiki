@@ -1,0 +1,15 @@
+
+== Shortcuts ==
+
+==== Navigation ====
+
+* Move window to *{ Position }* where *HJKL* are the direction (capitol):
+  * <C-W><C-*{Position}*>
+* Switch windows
+  * <C-W><w> 
+
+==== Terminal ==== 
+* Open Terminal in new window:
+  * :split/vsplit | terminal
+* Close Terminal:
+  * <C-\><C-n>

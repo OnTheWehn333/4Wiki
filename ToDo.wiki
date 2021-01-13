@@ -1,0 +1,9 @@
+= School =
+
+= Work = 
+
+= Projects =
+== RustDiamonds ==
+- [ ] Bot_Network
+- [ ] Towers
+- [ ] 

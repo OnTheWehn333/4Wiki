@@ -1,0 +1,21 @@
+* Purpose: The purpose of this server is to handle all bot trading. Create a high level api to interact with and everything else will be handled by the server. All in between transactions.
+* Thoughts: Use nodejs server as bot network. URI resource for giving commands of sending trade to another user. 
+* Functionality: 
+  * Input: Other User, Items, Deposit or Withdraw.
+  * Output: Trade request from main bot to user with items requested. 
+  * Callbacks: Web_Server needs callbacks to update information. Is the item in siteInventory? Actioncable to automatically update user's site.
+  * Wanted Features: 
+    1. Fast offers (definitely under 10 seconds, 5 perferable)
+    2. Limit of 15 items for max trade 
+    3. Sort items per bot
+    4. Automatically create the sorting per bot from items found in mongodb
+    5. Config for changing how many bots there are 
+  * Potential Problems:
+    1. Could take to long to send offer
+    2. Try sending offer when not all items are in the main bot 
+* Notes
+  * How to synchronize all trades so that all the items are in the main bot before sending the final offer to the user.
+    * Use async await for sending items to main bot. Wait for all items to be accepted, then have main bot send offer to user.  
+  * How to get callback once main bot accepts items. 
+    * Start bots and use the bots as arguments for each worker. While processing send out requests for slave bots. Wait until they're done then wait until the main bot accepts. 
+    * Have to create middle ware to connect the event in the bot to the promise that is waiting for the answers. Function that gets the trade offer ids and.
