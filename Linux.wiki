@@ -13,7 +13,10 @@
 
 === Bash ===
 
+* Variables:
+  * Variable=Value
 * Print date
 {{{bash
 echo $(date) 
 }}}
+
