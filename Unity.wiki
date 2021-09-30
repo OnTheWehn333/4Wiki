@@ -1,0 +1,24 @@
+== Code Examples ==
+
+=== Scope ===
+using UnityEngine;
+
+public class SomePerson : MonoBehaviour
+{
+    //This field gets serialized because it is public.
+    public string firstName = "John";
+
+    //This field does not get serialized because it is private.
+    private int age = 40;
+
+    //This field gets serialized even though it is private
+    //because it has the SerializeField attribute applied.
+    [SerializeField]
+    private bool hasHealthPotion = true;
+
+    void Start()
+    {
+        if (hasHealthPotion)
+            Debug.Log("Person's first name: " + firstName + " Person's age: " + age);
+    }
+}

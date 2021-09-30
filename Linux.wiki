@@ -10,6 +10,10 @@
   * service *{service}* status
 * Start service:
   * sudo systemctl start *{service}*
+* Check port usage:
+  * sudo lsof -i -P -n | grep LISTEN
+  * sudo netstat -tulpn | grep LISTEN
+
 
 === Bash ===
 
@@ -19,4 +23,5 @@
 {{{bash
 echo $(date) 
 }}}
-
+* Search for files:
+  * ls -a | grep "name"

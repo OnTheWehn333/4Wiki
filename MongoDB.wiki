@@ -1,0 +1,5 @@
+Mongodb is a no sql database. It uses collections of documents to store data. The documents don't have to adhere to the schemas but usually has common attributes for the same collection. 
+
+Mongo Atlas is a DaaS. It runs a mongo database in the cloud and has other smart features for keeping data safe and backed up.
+
+Mongo Realm is a backend service that connects to Mongo Atlas and updates data. Works for many different platforms and has sync for some of them. Also automatically creates graphql requests for the schema that is created. Also has authentication built in. Can serve static files. Really good for one page application. 

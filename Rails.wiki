@@ -1,0 +1,9 @@
+= Rails =
+
+== Gems ==
+
+==== Mongoid ====
+
+* Query:
+  * Model.where(*{attribute}*: *{value}*)
+  * Model.find_by(*{attribute}*: *{value}*)

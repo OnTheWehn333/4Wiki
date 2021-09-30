@@ -1,39 +1,53 @@
-= [[ToDo]] =
-
 = Knowledge =
 == Programming ==
-=== Languages: ===
-* Python:
-* [[Ruby]]:
-* Javascript:
-* [[Java]]:
-* C#:
-* [[Markdown]]:
+=== Languages ===
+* Python
+* [[Ruby]]
+* [[Javascript]]
+* [[Java]]
+* C#
+* [[Markdown]]
 
-=== Frameworks: ===
-* Rails:
-* [[Nodejs]]:
-* React:
+=== Web Development ===
+==== Front End ====
+* [[React]]
+* Angular
+
+==== Back End ====
+* [[Rails]]
+* [[Nodejs]]
+* [[MongoDB]]
+* [[Graphql]]
+
+
+==== Librarys ====
+
+=== Game Development ===
+* [[Unity]]
+* Unreal Engine
 
 === Programs ===
-* [[VSCode]]: 
+* [[VSCode]] 
 * [[NeoVim]]
+* [[Git]]
  
 == OS ==
-* [[Linux]]:
-* Windows:
-* Mac:  
+* [[Linux]]
+* Windows
+* Mac  
   
   
 == Projects ==
 === RustDiamonds ===
+* Resoures
+  * https://steamerrors.com/
+  * ProxyMesh
 * Games_Server
 * [[Bot_Network]]
-* Web_Server
+* [[Web_Server]]
 
+=== Picasso ===
 
-== School ==
-=== Senior ===
+=== Tik Tac Toe+ ===
 
-* [[GPU_Programming]]
-* 
+=== Online Resume ===

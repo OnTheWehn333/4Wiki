@@ -1,0 +1,2 @@
+A communication protocol that rivals REST. It uses HTTP to get information from the Graphql server but that server can be call many other APIs to get all the needed information. An advantage is that all the data is coming from one place to the user and can be obtained with one request. It also can find data based on relationships.
+

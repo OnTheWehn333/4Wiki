@@ -1,4 +1,0 @@
-== 1/13 ==
-
-* My Job schedule lots of threads so the GPU is always working
-  * You want no data dependency and to make the GPU is always working.
